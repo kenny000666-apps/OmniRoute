@@ -44,6 +44,7 @@ jobs:
           platforms: linux/amd64
           build-args: |
             OMNIROUTE_USE_TURBOPACK=0
+            NODE_OPTIONS=--max-old-space-size=6144
           tags: |
             ghcr.io/kenny000666-apps/omniroute:3.8.52
             ghcr.io/kenny000666-apps/omniroute:sha-${{ github.sha }}
