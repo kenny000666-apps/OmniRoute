@@ -13,7 +13,7 @@ permissions:
 
 jobs:
   build-and-push:
-    runs-on: [self-hosted, Linux, AMD64, k8s]
+    runs-on: ubuntu-latest
     permissions:
       contents: read
       packages: write
